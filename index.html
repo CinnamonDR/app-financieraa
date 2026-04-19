@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON-EXCHANGE | Cyberpunk Finance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="glitch-text" data-text="DOP_TERMINAL">DOP_TERMINAL</h1>
+                    <p class="lead text-cyan">Monitor dinámico de divisas. Conversión de Peso Dominicano a mercados globales.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card calculator-card border-neon-pink">
+                        <h4 class="text-pink mb-4"><i class="fa-solid fa-bolt me-2"></i>CONVERSOR_GLOBAL (12_MONEDAS)</h4>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="label-neon">CANTIDAD EN PESOS (DOP)</label>
+                                <input type="number" id="calcAmount" class="form-control cyber-input" value="1000">
+                            </div>
+                            <div class="col-12">
+                                <label class="label-neon">DIVISA DE DESTINO</label>
+                                <select id="calcTarget" class="form-select cyber-input">
+                                    <!-- Se llena automáticamente vía JS -->
+                                </select>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <div class="result-box">
+                                    <span id="calcResult">0.00</span> <span id="calcSymbol" class="text-pink">USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-5 border-bottom border-info pb-3">
+            <h2 class="neon-text-cyan">LIVE_MARKET_DOP</h2>
+            <span id="lastUpdate" class="font-code text-info">CARGANDO_SISTEMA...</span>
+        </div>
+        <div class="row g-4" id="currencyGrid"></div>
+    </main>
+
+    <!-- Modal de Perfil -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-neon-blue">
+                <div class="modal-body p-5 text-center">
+                    <img src="https://i.pravatar.cc/150?u=cyberpunk" class="profile-pic-large mb-3 border-neon">
+                    <h3 class="neon-text-blue">CYBER_ARCHITECT_DOP</h3>
+                    <p class="text-silver">Senior Financial Systems Developer</p>
+                    <div class="mt-4 text-start">
+                        <h6 class="text-cyan font-code">TECH_STACK:</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge cyber-badge">Javascript ES6</span>
+                            <span class="badge cyber-badge">ApexCharts</span>
+                            <span class="badge cyber-badge">ExchangeRateAPI</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex justify-content-center gap-3 social-icons">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+</body>
+</html>

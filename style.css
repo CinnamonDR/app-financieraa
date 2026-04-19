@@ -1,0 +1,71 @@
+:root {
+    --bg-dark: #020205;
+    --neon-blue: #00f3ff;
+    --neon-pink: #ff00ff;
+    --neon-yellow: #f3f315;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #e0e0e0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.font-code { font-family: 'Orbitron', sans-serif; }
+
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid var(--neon-blue);
+}
+
+.hero-section { padding: 120px 0 40px; }
+
+.glitch-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 2px 2px var(--neon-pink), -2px -2px var(--neon-blue);
+}
+
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.border-neon-pink { border: 1px solid var(--neon-pink); box-shadow: 0 0 15px rgba(255, 0, 255, 0.3); }
+.border-neon-blue { border: 1px solid var(--neon-blue); box-shadow: 0 0 15px rgba(0, 243, 255, 0.3); }
+
+.cyber-input {
+    background: rgba(0,0,0,0.6);
+    border: 1px solid var(--neon-blue);
+    color: #fff;
+    border-radius: 0;
+    font-family: 'Orbitron';
+}
+
+.cyber-input:focus {
+    background: #000;
+    color: #fff;
+    border-color: var(--neon-pink);
+    box-shadow: 0 0 10px var(--neon-pink);
+}
+
+.result-box {
+    font-size: 2.8rem;
+    font-family: 'Orbitron';
+    color: #fff;
+    text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.neon-text-blue { color: var(--neon-blue); text-shadow: 0 0 5px var(--neon-blue); }
+.neon-text-cyan { color: var(--neon-blue); font-family: 'Orbitron'; }
+.text-pink { color: var(--neon-pink); }
+.text-neon-yellow { color: var(--neon-yellow); font-family: 'Orbitron'; font-weight: bold; }
+
+.profile-pic { width: 45px; height: 45px; border-radius: 50%; border: 2px solid var(--neon-blue); }
+.profile-pic-large { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--neon-blue); }
+.cyber-badge { border: 1px solid var(--neon-pink); color: var(--neon-pink); background: none; }
+.flag-icon { width: 30px; margin-right: 10px; border: 1px solid #444; }
